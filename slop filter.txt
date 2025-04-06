@@ -1,0 +1,16 @@
+!uBlock filter that removes fandom.com and prominent AI sites from google and image search
+!Ben Southwick, 2025
+
+!jsname="dTDiAc" identifies image search tiles
+!jscontroller="SC7lYd" identifies regular search results
+
+
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="fandom.com"])
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="freepik.com"])
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="nightcafe.studio"])
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="stablediffusionweb.com"])
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="easy-peasy.ai"])
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="dreamstime.com"])
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="pixai.art"])
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="seaart.ai"])
+google.*###search :is(.g, div[jsname="dTDiAc"], div[jscontroller="SC7lYd"]):has(a[href*="craiyon.com"])
